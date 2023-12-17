@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -95,5 +97,17 @@
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.star{z-index: 0; display: block; background-color: #fff; position: absolute; border-radius: 100%; animation-timing-function: linear;animation-iteration-count: infinite;}
+
+@keyframes move_right {
+   from { transform: rotate(0deg) translateX(8px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(8px) rotate(-360deg); }
+}
+
+@keyframes move_left {
+   from { transform: rotate(0deg) translateX(8px) rotate(0deg); }
+    to   { transform: rotate(-360deg) translateX(8px) rotate(360deg); }
 }
 

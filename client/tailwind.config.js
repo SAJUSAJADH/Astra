@@ -12,7 +12,9 @@ export default {
       xl: '1440px'
     },
     fontFamily: {
-      dm: ["DM Serif Display","serif"]
+      dm: ["DM Serif Display","serif"],
+      ka: ['Kalnia', 'serif'],
+      aladin: ["Aladin", 'serif']
     },
     extend: {},
   },
