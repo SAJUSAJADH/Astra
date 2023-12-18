@@ -35,9 +35,9 @@ export default function Highlights(){
 
   return(
 
-    <div className="w-full bg-no-repeat bg-cover bg-center grid justify-center items-center" style={{backgroundImage: ` url(${Background})`}}>
-        <div className='pt-8 text-center'>
-            <h2 data-aos="zoom-in" className='font-bold tracking-widest text-rose-200 font-dm text-4xl lg:text-5xl pb-24'>Highlights</h2>
+    <div  className="w-full bg-no-repeat bg-cover bg-center grid justify-center items-center" style={{backgroundImage: ` url(${Background})`}}>
+        <div className='pt-12 text-center'>
+            <h2 id='highlights' data-aos="zoom-in" className='font-bold tracking-widest text-rose-200 font-dm text-4xl lg:text-5xl pb-24'>Highlights</h2>
         </div>
         <div className='px-2 lg:px-28 container'>
             {Data.map((item, index)=>(
