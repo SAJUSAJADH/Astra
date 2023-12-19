@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.92.4",
     "@react-three/fiber": "^8.15.12",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.16",
+    "dotenv": "^16.3.1",
     "framer-motion": "^10.16.16",
     "maath": "^0.10.7",
     "postcss": "^8.4.32",
