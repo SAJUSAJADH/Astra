@@ -9,6 +9,7 @@ import Background from '../assets/bg.jpg'
 import treasure from '../assets/treasure.jpg'
 
 
+
 export default function Highlights(){
 
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
@@ -46,7 +47,7 @@ export default function Highlights(){
                         <p className="font-aladin text-rose-200 tracking-widest text-center text-3xl">{item.event}</p>
                         <p className="text-md lg:text-lg text-justify">{item.desc}</p>
                     </div>
-                    <div className="flex justify-center items-center ">
+                   <div className="flex justify-center items-center">
                         <img data-aos = {!isLargeScreen ? "fade-up" : index % 2 === 0 ? "fade-right":"fade-left"} className={index === 0 ? 'w-2/3 lg:w-3/4 h-3/4 img-fluid' :'w-2/3 lg:w-3/4 img-fluid'} src={item.image} alt={item.image} />
                     </div>
                 </div>

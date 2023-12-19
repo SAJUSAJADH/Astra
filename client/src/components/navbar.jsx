@@ -34,10 +34,10 @@ export default function Nav(){
                     <a href='/' className="hover-underline-animation tracking-widest cursor-pointer py-2 font-sans text-lg">HOME</a>
                     <a href='#about' className="hover-underline-animation tracking-widest cursor-pointer py-2 font-sans text-lg">ABOUT</a>
                     <a href='#highlights' className="hover-underline-animation tracking-widest cursor-pointer py-2 font-sans text-lg">EVENTS</a>                
-                    <a href='' className="hover-underline-animation tracking-widest cursor-pointer py-2 font-sans text-lg">GALLERY</a>
-                    <a href='' className="hover-underline-animation tracking-widest cursor-pointer py-2 font-sans text-lg">CONTACT US</a> 
+                    <a href='#gallery' className="hover-underline-animation tracking-widest cursor-pointer py-2 font-sans text-lg">GALLERY</a>
+                    <a href='#contact' className="hover-underline-animation tracking-widest cursor-pointer py-2 font-sans text-lg">CONTACT US</a> 
                     <span className="border px-1 py-1 cursor-pointer"> 
-                        <a href=''><h2 className="border tracking-widest text-lg px-1 py-1 bg-white bg-opacity-30 hover:bg-transparent hover:astra">REGISTRATION OPEN</h2></a>
+                        <a href='#book-slot'><h2 className="border tracking-widest text-lg px-1 py-1 bg-white bg-opacity-30 hover:bg-transparent hover:astra">REGISTRATION OPEN</h2></a>
                         <i></i>
                     </span>
                 </div>

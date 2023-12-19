@@ -4,8 +4,8 @@ import Hero from "../components/hero"
 import Highlights from "../components/highlights"
 import Background from '../assets/bg.jpg'
 import Gallery from "../components/gallery"
-import Ticket from "../components/tickets"
 import StarsCanvas from "../components/stars"
+import Schedule from "../components/schedule"
 
 
 
@@ -19,7 +19,7 @@ export default function App() {
       </div>
         <About />
         <Highlights />
-        <Ticket />
+        <Schedule/>
         <div className="relative z-0">
         <Gallery />
         <StarsCanvas/>
