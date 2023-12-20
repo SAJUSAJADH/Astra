@@ -22,15 +22,17 @@ export default function Contact () {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        setLoading(true)
+        
 
-        emailjs.send(serviecId,templateId,{
+        if(Name!='' && email!='' && message!=''){
+          setLoading(true)
+            emailjs.send(serviecId,templateId,{
             from_name: Name,
             to_name: 'sajadh s',
             from_email: email,
             to_email: 'sajadh2001s@gmail.com',
             message: `${message} ----from ${email}`,
-        }, publicKey).then(()=>{
+        }, 'bPcTl3OLU1cEebdmy').then(()=>{
             setLoading(false)
             setName('')
             setEmail('')
@@ -39,7 +41,7 @@ export default function Contact () {
             setLoading(false)
             console.log(error)
             alert('something went wrong.')
-        })
+        })}
     }
 
     return(<>
@@ -52,6 +54,8 @@ export default function Contact () {
       >
         <p  className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        
+        
 
         <form
           ref={formRef}

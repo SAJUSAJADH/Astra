@@ -7,11 +7,11 @@ export default function Nav(){
    
 
     const menus = [
-        {name: 'HOME', href: ""},
-        {name: 'ABOUT', href: ""},
-        {name: 'EVENTS', href: "/faq"},
-        {name: 'GALLERY', href:"/register"},
-        {name: 'CONTACT US', href: '/signin'}
+        {name: 'HOME', href: "/"},
+        {name: 'ABOUT', href: "#about"},
+        {name: 'EVENTS', href: "#highlights"},
+        {name: 'GALLERY', href:"#gallery"},
+        {name: 'CONTACT US', href: '#contact'}
     ]
 
     const open =()=>{
@@ -47,7 +47,7 @@ export default function Nav(){
                     <span className="hamburger-bottom"></span>
                 </button>
                 <div className="md:hidden">
-                    <div onClick={open} id="menu" className={isToggle ? "absolute mt-6 flex flex-col items-center self-end py-8 text-xl duration-1000 rounded-2xl shadow-2xl space-y-6 bg-white bg-opacity-20 border text-opacity-100 border-b-0 border-r-0 border-opacity-10 backdrop-filter backdrop-blur-sm text-[#fff] sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" : "absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" }>
+                    <div onClick={open} id="menu" className={isToggle ? "absolute mt-6 flex flex-col items-center self-end py-8 text-xl duration-1000 rounded-2xl shadow-2xl space-y-6 bg-rose-400 bg-opacity-90 border text-opacity-100 border-b-0 border-r-0 border-opacity-10 backdrop-filter backdrop-blur-sm text-[#fff] sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" : "absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" }>
                         {menus.map((menu,index)=>(
                             <a key={index} href={menu.href}>{menu.name}</a>
                         ))}

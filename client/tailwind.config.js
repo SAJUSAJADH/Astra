@@ -7,14 +7,15 @@ export default {
   theme: {
     screens:{
       sm: '480px',
-      md: '1000px',
-      lg: '1100px',
+      md: '1335px',
+      lg: '1340px',
       xl: '1440px'
     },
     fontFamily: {
       dm: ["DM Serif Display","serif"],
       ka: ['Kalnia', 'serif'],
-      aladin: ["Aladin", 'serif']
+      aladin: ["Aladin", 'serif'],
+      lexend: ["Lexend"]
     },
     extend: {},
   },
