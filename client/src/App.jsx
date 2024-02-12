@@ -1,14 +1,12 @@
-import './App.css'
-import Home from "./pages/home"
+import "./App.css";
+import ReactRouter from "./ReactRouter/mainRouter";
 
 function App() {
-
-
   return (
     <>
-        <Home/> 
+      <ReactRouter />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

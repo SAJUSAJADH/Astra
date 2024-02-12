@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalnia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .hamburger {
   cursor: pointer;
@@ -15,7 +15,9 @@
   position: relative;
 }
 
-.hamburger-top,.hamburger-middle,.hamburger-bottom{
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,53 +28,56 @@
   transition: all 0.5s;
 }
 
-.hamburger-middle{
+.hamburger-middle {
   transform: translateY(7px);
 }
-.hamburger-bottom{
+.hamburger-bottom {
   transform: translateY(14px);
 }
 
-.open{
+.open {
   transform: rotate(90deg);
-  transform:  translateY(0px);
+  transform: translateY(0px);
 }
 
-.open .hamburger-top{
+.open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
-.open .hamburger-middle{
+.open .hamburger-middle {
   display: none;
 }
 
-.open .hamburger-bottom{
+.open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-.astra{
+.astra {
   color: #fff;
-  text-shadow: 0 0 10px #00b3ff,
-               0 0 20px #00b3ff,
-               0 0 40px #00b3ff,
-               0 0 80px #00b3ff,
-               0 0 120px #00b3ff;
+  text-shadow:
+    0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff;
 }
 
-.astra1{
+.astra1 {
   color: white;
-  text-shadow: 0 0 10px white, 0 0 40px white;
+  text-shadow:
+    0 0 10px white,
+    0 0 40px white;
 }
 
-.hero{
+.hero {
   animation: transitionIn 4s;
 }
 
 @keyframes transitionIn {
-  from{
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
@@ -83,7 +88,7 @@
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -100,23 +105,39 @@
   transform-origin: bottom left;
 }
 
-.star{z-index: 0; display: block; background-color: #fff; position: absolute; border-radius: 100%; animation-timing-function: linear;animation-iteration-count: infinite;}
+.star {
+  z-index: 0;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 100%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
 @keyframes move_right {
-   from { transform: rotate(0deg) translateX(8px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(8px) rotate(-360deg); }
+  from {
+    transform: rotate(0deg) translateX(8px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(8px) rotate(-360deg);
+  }
 }
 
 @keyframes move_left {
-   from { transform: rotate(0deg) translateX(8px) rotate(0deg); }
-    to   { transform: rotate(-360deg) translateX(8px) rotate(360deg); }
+  from {
+    transform: rotate(0deg) translateX(8px) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(8px) rotate(360deg);
+  }
 }
 
-nav{
+nav {
   transition: background-color 0.4s ease-in-out;
 }
 
-nav.scrolled{
+nav.scrolled {
   background-color: #c51b4b;
   opacity: 0.98;
 }
@@ -167,4 +188,19 @@ nav.scrolled{
       margin-right: 1em;
     }
   }
+}
+
+.text {
+  /** TEXT GRADIENT */
+  color: #e91e63;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #e91e63 14%,
+    #1762e3 58%,
+    #e91e63 39%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }

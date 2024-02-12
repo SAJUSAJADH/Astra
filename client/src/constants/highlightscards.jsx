@@ -7,9 +7,8 @@ import coding from "../assets/coding.png";
 import debugging from "../assets/debugging.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
-import { Data } from "../styles";
 
-export default function Highlights() {
+export default function HighlightsMobile() {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
 
   const navigate = useNavigate();
@@ -23,19 +22,18 @@ export default function Highlights() {
   }, []);
 
   return (
-    <div className="w-full bg-no-repeat bg-cover bg-center hidden lg:grid justify-center items-center">
+    <div className="w-full bg-no-repeat bg-cover bg-center grid justify-center items-center">
       <div className="pt-12 text-center">
         <h2
-          id="highlights"
+          id="events"
           data-aos="zoom-in"
           className="font-bold tracking-widest text-rose-200 font-dm text-4xl lg:text-5xl pb-10"
         >
           Events
         </h2>
       </div>
-      <div className="px-2 lg:px-28 container grid lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="px-2 lg:px-28 container grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         <Card
-        onClick={()=>navigate('/events/')}
           data-aos="flip-right"
           hoverable
           className=""
@@ -47,7 +45,6 @@ export default function Highlights() {
           <Meta className="text" title="TREASUR HUNT" />
         </Card>
         <Card
-        onClick={()=>navigate('/events/')}
           data-aos="flip-left"
           hoverable
           className=""
@@ -59,7 +56,6 @@ export default function Highlights() {
           <Meta className="text" title="FREEFIRE" />
         </Card>
         <Card
-        onClick={()=>navigate('/events/')}
           data-aos="flip-right"
           hoverable
           className=""
