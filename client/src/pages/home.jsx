@@ -38,7 +38,7 @@ export default function Home() {
       <Schedule />
       <div className="relative z-0">
         <Gallery />
-        {/* <StarsCanvas /> */}
+        <StarsCanvas />
       </div>
     </div>
   );
